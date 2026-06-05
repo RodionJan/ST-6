@@ -8,23 +8,23 @@ class PlayerTest {
     @Test
     void testPlayerInitialState() {
         Player player = new Player();
-        assertEquals(0, player.symbol);
-        assertEquals(0, player.move);
-        assertFalse(player.selected);
-        assertFalse(player.win);
+        assertEquals(0, player.mark);
+        assertEquals(0, player.chosenposition);
+        assertFalse(player.ischosen);
+        assertFalse(player.haswon);
     }
 
     @Test
-    void testPlayerWithSymbol() {
+    void testPlayerWithmark() {
         Player player = new Player();
-        player.symbol = 'X';
-        player.move = 5;
-        player.selected = true;
-        player.win = true;
+        player.mark = 'X';
+        player.chosenposition = 5;
+        player.ischosen = true;
+        player.haswon = true;
 
-        assertEquals('X', player.symbol);
-        assertEquals(5, player.move);
-        assertTrue(player.selected);
-        assertTrue(player.win);
+        assertEquals('X', player.mark);
+        assertEquals(5, player.chosenposition);
+        assertTrue(player.ischosen);
+        assertTrue(player.haswon);
     }
 }

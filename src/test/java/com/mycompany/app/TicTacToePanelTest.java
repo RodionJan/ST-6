@@ -28,6 +28,6 @@ class TicTacToePanelTest {
         } catch (SecurityException e) {
         }
 
-        assertEquals('X', firstCell.getMarker());
+        assertEquals('X', firstCell.getSymbol());
     }
 }

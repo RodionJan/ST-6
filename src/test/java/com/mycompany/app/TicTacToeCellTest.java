@@ -12,14 +12,14 @@ class TicTacToeCellTest {
         assertEquals(0, cell.getNum());
         assertEquals(0, cell.getRow());
         assertEquals(0, cell.getCol());
-        assertEquals(' ', cell.getMarker());
+        assertEquals(' ', cell.getSymbol());
     }
 
     @Test
     void testCellSetMarker() {
         TicTacToeCell cell = new TicTacToeCell(4, 1, 1);
-        cell.setMarker("X");
-        assertEquals('X', cell.getMarker());
+        cell.setSymbol("X");
+        assertEquals('X', cell.getSymbol());
         assertFalse(cell.isEnabled());
     }
 
@@ -37,12 +37,12 @@ class TicTacToeCellTest {
         TicTacToeCell cell2 = new TicTacToeCell(4, 1, 1);
         TicTacToeCell cell3 = new TicTacToeCell(8, 2, 2);
 
-        cell1.setMarker("X");
-        cell2.setMarker("O");
-        cell3.setMarker("X");
+        cell1.setSymbol("X");
+        cell2.setSymbol("O");
+        cell3.setSymbol("X");
 
-        assertEquals('X', cell1.getMarker());
-        assertEquals('O', cell2.getMarker());
-        assertEquals('X', cell3.getMarker());
+        assertEquals('X', cell1.getSymbol());
+        assertEquals('O', cell2.getSymbol());
+        assertEquals('X', cell3.getSymbol());
     }
 }

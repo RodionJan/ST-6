@@ -20,13 +20,13 @@ class UtilityTest {
 
     @Test
     void testPrintArrayList() {
-        ArrayList<Integer> moves = new ArrayList<>(Arrays.asList(0, 4, 8));
-        Utility.print(moves);
+        ArrayList<Integer> chosenpositions = new ArrayList<>(Arrays.asList(0, 4, 8));
+        Utility.print(chosenpositions);
     }
 
     @Test
     void testPrintEmptyArrayList() {
-        ArrayList<Integer> moves = new ArrayList<>();
-        Utility.print(moves);
+        ArrayList<Integer> chosenpositions = new ArrayList<>();
+        Utility.print(chosenpositions);
     }
 }
